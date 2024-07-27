@@ -1,0 +1,42 @@
+[
+  {
+    "id": 39,
+    "shape": "round",
+    "customers": [
+      {
+        "id": 19,
+        "customerName": "BriGriggs2"
+      },
+      {
+        "id": 21,
+        "customerName": "Briana"
+      }
+    ],
+    "color": {
+      "id": 28,
+      "colorName": "sapphire"
+    }
+  },
+  {
+    "id": 40,
+    "shape": "star",
+    "customers": [
+      {
+        "id": 22,
+        "customerName": "Briana"
+      },
+      {
+        "id": 19,
+        "customerName": "BriGriggs2"
+      },
+      {
+        "id": 21,
+        "customerName": "Briana"
+      }
+    ],
+    "color": {
+      "id": 28,
+      "colorName": "sapphire"
+    }
+  }
+]

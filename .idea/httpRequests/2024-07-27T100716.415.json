@@ -1,7 +1,0 @@
-{
-  "timestamp": "2024-07-27T15:07:16.753+00:00",
-  "status": 415,
-  "error": "Unsupported Media Type",
-  "message": "Content-Type 'application/json;charset=UTF-8' is not supported.",
-  "path": "/newCandyColor"
-}

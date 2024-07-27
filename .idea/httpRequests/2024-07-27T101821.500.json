@@ -1,7 +1,0 @@
-{
-  "timestamp": "2024-07-27T15:18:21.672+00:00",
-  "status": 500,
-  "error": "Internal Server Error",
-  "message": "could not execute statement [ERROR: insert or update on table \"cotton_candy_customers\" violates foreign key constraint \"fkact663j84be8xox1tp6hi19bh\"\n  Detail: Key (cotton_candy_id)=(37) is not present in table \"cotton_candy\".] [insert into cotton_candy_customers (cotton_candy_id,customer_id) values (?,?)]; SQL [insert into cotton_candy_customers (cotton_candy_id,customer_id) values (?,?)]; constraint [fkact663j84be8xox1tp6hi19bh]",
-  "path": "/newCandyColor"
-}

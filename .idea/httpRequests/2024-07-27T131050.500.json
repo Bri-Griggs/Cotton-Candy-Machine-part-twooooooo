@@ -1,0 +1,7 @@
+{
+  "timestamp": "2024-07-27T18:10:50.927+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Cotton candy with id 27 does not exist",
+  "path": "/alldatcottoncandies/27"
+}

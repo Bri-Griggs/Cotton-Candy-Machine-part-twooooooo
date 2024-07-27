@@ -22,6 +22,10 @@ public class CottonCandyService {
         return candyRepo.findAll();
     }
 
+    public CottonCandy getCottonCandyById(Long id) {
+        return candyRepo.findById(id).orElseThrow(() -> new IllegalStateException("Cotton candy with id " + id + " does not exist"));
+    }
+
     public void addCottonCandy(CottonCandy cottonCandy) {
         candyRepo.save(cottonCandy);
     }

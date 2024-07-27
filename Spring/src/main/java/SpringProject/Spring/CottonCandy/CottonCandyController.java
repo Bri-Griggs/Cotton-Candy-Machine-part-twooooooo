@@ -21,7 +21,7 @@ public class CottonCandyController {
     }
 
     @GetMapping(path="alldatcottoncandies/{id}")
-    public CottonCandy getCSingularCottonCandy(@PathVariable("id") Long id) {
+    public CottonCandy getCottonCandyById(@PathVariable("id") Long id) {
         return candyService.getCottonCandy(id);
     }
 
@@ -35,9 +35,9 @@ public class CottonCandyController {
         candyService.deleteCottonCandy(id);
     }
 
-    @PutMapping(path= "putCandyColor/{id}")
+    @PutMapping(path= "putCandyShape/{id}")
     public void putColor(@PathVariable("id") Long id,
-                         @RequestParam(required = false) String color) {
-        candyService.updateCottonCandy(id, color);
+                         @RequestParam(required = false) String shape) {
+        candyService.updateCottonCandy(id, shape);
     }
 }

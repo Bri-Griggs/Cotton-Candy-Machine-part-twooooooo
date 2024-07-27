@@ -20,6 +20,10 @@ public class ColorService {
         return colorRepo.findAll();
     }
 
+    public ColorName getSingleColor(Long id){
+        return colorRepo.findById(id).orElseThrow(() -> new IllegalStateException("Color not found"));
+    }
+
     public void addColorName(ColorName ColorName){
         colorRepo.save(ColorName);
     }
@@ -39,6 +43,9 @@ public class ColorService {
         }
     }
 
+    public ColorName getColorName(Long id){
+        return colorRepo.findById(id).orElseThrow(() -> new IllegalStateException("Color not found"));
+    }
 
 }
 

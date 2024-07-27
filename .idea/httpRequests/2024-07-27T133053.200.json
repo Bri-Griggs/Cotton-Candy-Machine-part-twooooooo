@@ -1,0 +1,20 @@
+[
+  {
+    "id": 39,
+    "shape": "Balloon",
+    "customers": [
+      {
+        "id": 21,
+        "customerName": "Briana"
+      },
+      {
+        "id": 19,
+        "customerName": "BriGriggs2"
+      }
+    ],
+    "color": {
+      "id": 28,
+      "colorName": "sapphire"
+    }
+  }
+]

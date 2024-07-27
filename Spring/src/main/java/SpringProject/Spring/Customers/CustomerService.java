@@ -26,6 +26,10 @@ public class CustomerService {
         return customerRepo.findAll();
     }
 
+    public CustomerName getCustomer(Long id) {
+        return customerRepo.findById(id).orElseThrow(() -> new IllegalStateException("Customer not found"));
+    }
+
     public void addCustomer(CustomerName newCustomer) {
         customerRepo.save(newCustomer);
     }

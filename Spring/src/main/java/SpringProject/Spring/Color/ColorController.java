@@ -20,6 +20,11 @@ public class ColorController {
         return ColorService.readAllColors();
     }
 
+    @GetMapping("/cottoncandies/{ColorId}")
+    public ColorName getSingleColor(@PathVariable("ColorId") Long ColorId) {
+        return ColorService.getSingleColor(ColorId);
+    }
+
     @PostMapping("/newColor")
     public void postColor(@RequestBody ColorName ColorName) {
         ColorService.addColorName(ColorName);
