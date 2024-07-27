@@ -1,7 +1,6 @@
 package SpringProject.Spring.Customers;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
@@ -13,19 +12,24 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
+    @GetMapping(path = "getcustomer")
     public List<CustomerName> getCustomers(){
         return customerService.getAllCustomers();
     }
 
-    public void postCustomer(CustomerName newCustomer){
+    @PostMapping(path = "createnewcustomer")
+    public void postCustomer(@RequestBody CustomerName newCustomer){
         customerService.addCustomer(newCustomer);
     }
 
-    public void delCustomer(Long id){
+    @DeleteMapping(path = "delcustomer/{id}")
+    public void delCustomer(@PathVariable("id") Long id){
         customerService.deleteCustomer(id);
     }
 
-    public void putCustomer(Long id, String newName){
+    @PutMapping(path = "putcustomer/{id}")
+    public void putCustomer(@PathVariable("id") Long id
+            ,@RequestParam(required = false) String newName){
         customerService.updateCustomer(id, newName);
     }
 }

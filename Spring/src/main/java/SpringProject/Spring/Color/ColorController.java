@@ -6,33 +6,33 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/colors")
+@RequestMapping
 public class ColorController {
-    private final ColorService colorService;
+    private final ColorService ColorService;
 
     @Autowired
-    public ColorController(ColorService colorService) {
-        this.colorService = colorService;
+    public ColorController(ColorService ColorService) {
+        this.ColorService = ColorService;
     }
 
     @GetMapping("/cottoncandies")
     public List<ColorName> getColors() {
-        return colorService.readAllColors();
+        return ColorService.readAllColors();
     }
 
-    @PostMapping("/newcolor")
-    public void postColor(@RequestBody ColorName colorName) {
-        colorService.addColorName(colorName);
+    @PostMapping("/newColor")
+    public void postColor(@RequestBody ColorName ColorName) {
+        ColorService.addColorName(ColorName);
     }
 
-    @DeleteMapping("/delcolor/{colorId}")
-    public void deleteColor(@PathVariable("colorId") Long colorId) {
-        colorService.deleteColorName(colorId);
+    @DeleteMapping("/delColor/{ColorId}")
+    public void deleteColor(@PathVariable("ColorId") Long ColorId) {
+        ColorService.deleteColorName(ColorId);
     }
 
-    @PutMapping("/putcolor/{colorId}")
-    public void updateColor(@PathVariable("colorId") Long colorId,
-                            @RequestParam(required = false) String colorName) {
-        colorService.updateColorName(colorName, colorId);
+    @PutMapping("/putColor/{ColorId}")
+    public void updateColor(@PathVariable("ColorId") Long ColorId,
+                            @RequestParam(required = false) String ColorName) {
+        ColorService.updateColorName(ColorName, ColorId);
     }
 }

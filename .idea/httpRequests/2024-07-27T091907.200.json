@@ -1,0 +1,21 @@
+[
+  {
+    "id": 26,
+    "customers": [],
+    "color": "pink"
+  },
+  {
+    "id": 27,
+    "customers": [
+      {
+        "id": 19,
+        "customerName": "BriGriggs"
+      },
+      {
+        "id": 21,
+        "customerName": "Briana"
+      }
+    ],
+    "color": "pink"
+  }
+]

@@ -1,40 +1,45 @@
 package SpringProject.Spring.CottonCandy;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.awt.*;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class CottonCandyService {
     private final CottonCandyRepo candyRepo;
 
     @Autowired
-    public CottonCandyService(CottonCandyRepo candyRepo) {
-        this.candyRepo = candyRepo;
+    public CottonCandyService(CottonCandyRepo cottonCandyRepository) {
+        this.candyRepo = cottonCandyRepository;
     }
 
-    public List<CottonCandy> getAllCottonCandy(){
+    public CottonCandy getCottonCandy(Long id) {
+        return candyRepo.findById(id).orElseThrow(() -> new IllegalStateException("Cotton candy with id " + id + " does not exist"));
+    }
+
+    public List<CottonCandy> getCottonCandies() {
         return candyRepo.findAll();
     }
-    public void addCottonCandy(CottonCandy cottonCandy){
+
+    public void addCottonCandy(CottonCandy cottonCandy) {
         candyRepo.save(cottonCandy);
     }
-    public void deleteCottonCandy(Long id){
+
+    public void deleteCottonCandy(Long id) {
         boolean exists = candyRepo.existsById(id);
-        if (!exists){
-            throw new IllegalStateException("Cotton candy not found");
+        if (!exists) {
+            throw new IllegalStateException("Cotton candy with id " + id + " does not exist");
         }
         candyRepo.deleteById(id);
     }
-    public void updateCottonCandyColor(Long id, String color){
-       CottonCandy candyInstance = candyRepo.findById(id).orElseThrow(()->new IllegalStateException("Cotton Candy not found!"));
-       if(color!=null && !color.isEmpty() && !Objects.equals(candyInstance.getColor(), color)){
-           candyInstance.setColor(color);
-        }
 
+    @Transactional
+    public void updateCottonCandy(Long id, String shape) {
+        CottonCandy candy = candyRepo.findById(id).orElseThrow(() -> new IllegalStateException("Cotton candy with id " + id + " does not exist"));
+        if(shape != null && !shape.isEmpty() && !Objects.equals(candy.getShape(), shape)) {
+            candy.setShape(shape);
+        }
     }
+
 }

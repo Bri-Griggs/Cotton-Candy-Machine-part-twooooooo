@@ -1,0 +1,7 @@
+{
+  "timestamp": "2024-07-27T15:17:30.017+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "could not execute statement [ERROR: insert or update on table \"cotton_candies\" violates foreign key constraint \"fkd0viw8lpraposekytl61otdg5\"\n  Detail: Key (color_id)=(1) is not present in table \"color_names\".] [insert into cotton_candies (color_id,shape,id) values (?,?,?)]; SQL [insert into cotton_candies (color_id,shape,id) values (?,?,?)]; constraint [fkd0viw8lpraposekytl61otdg5]",
+  "path": "/newCandyColor"
+}

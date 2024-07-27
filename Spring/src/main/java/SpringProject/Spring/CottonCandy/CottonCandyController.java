@@ -3,36 +3,41 @@ package SpringProject.Spring.CottonCandy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.*;
 
 @RestController
 @RequestMapping
 public class CottonCandyController {
-    private final CottonCandyService cottonCandyService;
+    private final CottonCandyService candyService;
 
     @Autowired
-    public CottonCandyController(CottonCandyService cottonCandyService){
-        this.cottonCandyService = cottonCandyService;
+    public CottonCandyController(CottonCandyService candyService) {
+        this.candyService = candyService;
     }
 
-    @GetMapping(path =" alldacottoncandies")
-    public List<CottonCandy> getColor(){
-        return cottonCandyService.getAllCottonCandy();
+    @GetMapping(path="alldatcottoncandies")
+    public List<CottonCandy> getCottonCandy() {
+        return candyService.getCottonCandies();
     }
 
-    @PostMapping(path= "newCandycolor")
-    public void postColor(@RequestBody CottonCandy newCottonCandy){
-        cottonCandyService.addCottonCandy(newCottonCandy);
+    @GetMapping(path="alldatcottoncandies/{id}")
+    public CottonCandy getCSingularCottonCandy(@PathVariable("id") Long id) {
+        return candyService.getCottonCandy(id);
     }
 
-    @DeleteMapping(path = "delCandyColor")
+    @PostMapping(path = "/newCandyColor")
+    public void postColor(@RequestBody CottonCandy cottonCandy) {
+        candyService.addCottonCandy(cottonCandy);
+    }
+
+    @DeleteMapping(path="delCandyColor/{id}")
     public void delColor(@PathVariable("id") Long id){
-        cottonCandyService.deleteCottonCandy(id);
+        candyService.deleteCottonCandy(id);
     }
 
-    @PutMapping(path = "putCandyColor")
+    @PutMapping(path= "putCandyColor/{id}")
     public void putColor(@PathVariable("id") Long id,
-                         @RequestParam(required = false) String newColor){
-        cottonCandyService.updateCottonCandyColor(id, newColor);
+                         @RequestParam(required = false) String color) {
+        candyService.updateCottonCandy(id, color);
     }
 }

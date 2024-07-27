@@ -1,26 +1,33 @@
 package SpringProject.Spring.Customers;
 
+import SpringProject.Spring.CottonCandy.CottonCandy;
+import SpringProject.Spring.CottonCandy.CottonCandyRepo;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 @Service
 public class CustomerService {
     private final CustomerRepo customerRepo;
+    private final CottonCandyRepo CottonCandyRepo;
 
     @Autowired
-    public CustomerService(CustomerRepo customerRepo) {
+    public CustomerService(CustomerRepo customerRepo, CottonCandyRepo CottonCandyRepo) {
         this.customerRepo = customerRepo;
+        this.CottonCandyRepo = CottonCandyRepo;
     }
 
     public List<CustomerName> getAllCustomers() {
         return customerRepo.findAll();
     }
 
-    public void addCustomer(CustomerName customer) {
-        customerRepo.save(customer);
+    public void addCustomer(CustomerName newCustomer) {
+        customerRepo.save(newCustomer);
     }
 
     public void deleteCustomer(Long id) {
@@ -30,10 +37,12 @@ public class CustomerService {
         }
         customerRepo.deleteById(id);
     }
+
+    @Transactional
     public void updateCustomer(Long id, String name) {
         CustomerName customerInstance = customerRepo.findById(id).orElseThrow(() -> new IllegalStateException("Customer not found!"));
         if (name != null && !name.isEmpty() && !Objects.equals(customerInstance.getCustomerName(), name)) {
             customerInstance.setCustomerName(name);
         }
     }
-    }
+}

@@ -1,0 +1,707 @@
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T102248.200.json
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T102158.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 108
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color":
+    { "id": 28 }
+}
+
+###
+
+GET http://localhost:8080/cottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T102122.200.json
+
+###
+
+POST http://localhost:8080/newColor
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "colorName": "sapphire"
+}
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 108
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color":
+    { "id": 27 }
+}
+
+<> 2024-07-27T101852.500.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 109
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color":
+    { "id": 27 }
+
+}
+
+<> 2024-07-27T101821.500.json
+
+###
+
+GET http://localhost:8080/cottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T101815.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 108
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color":
+    { "id": 1 }
+
+}
+
+<> 2024-07-27T101730.500.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+<> 2024-07-27T101336.415.json
+
+###
+
+PUT http://localhost:8080/putcustomer/19?newName=BriGriggs2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Length: 134
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+Content-Type: application/json
+{
+  "shape": "star",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": { "id": 26 }
+}
+
+<> 2024-07-27T101205.415.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 104
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": { "id": 26 }
+}
+
+<> 2024-07-27T100952.415.json
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T100946.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 103
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "star",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": { "id": 26 }
+}
+
+<> 2024-07-27T100716.415.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 104
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": { "id": 26 }
+}
+
+<> 2024-07-27T100610.415.json
+
+###
+
+GET http://localhost:8080/cottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T100552.200.json
+
+###
+
+POST http://localhost:8080/newColor
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "colorName": "sapphire"
+}
+
+###
+
+GET http://localhost:8080/cottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T100547.200.json
+
+###
+
+POST http://localhost:8080/newColor
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "colorName": "sapphire"
+}
+
+###
+
+GET http://localhost:8080/cottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T100537.200.json
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T095808.200.json
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T095732.200.json
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T095340.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T095259.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T095050.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T094809.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T094514.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T094209.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T094137.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T094011.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "shape": "round",
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+###
+
+POST http://localhost:8080/newColor
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "colorName": "sapphire"
+}
+
+###
+
+GET http://localhost:8080/cottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T093834.200.json
+
+###
+
+GET http://localhost:8080/getcustomer
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T093806.200.json
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T091942.200.json
+
+###
+
+DELETE http://localhost:8080/delCandyColor/26
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T091907.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": "pink"
+}
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T091857.200.json
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T091844.200.json
+
+###
+
+GET http://localhost:8080/alldatcottoncandies
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-27T091655.200.json
+
+###
+
+POST http://localhost:8080/newCandyColor
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "customers": [
+    { "id": 19 },
+    { "id": 21 }
+  ],
+  "color": "pink"
+}
+
+###
+

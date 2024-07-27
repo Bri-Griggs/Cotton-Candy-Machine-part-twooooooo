@@ -1,5 +1,6 @@
 package SpringProject.Spring.Color;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,16 +12,16 @@ public class ColorService {
     private final ColorRepo colorRepo;
 
     @Autowired
-    public ColorService(ColorRepo colorRepo){
-        this.colorRepo = colorRepo;
+    public ColorService(ColorRepo ColorRepo){
+        this.colorRepo = ColorRepo;
     }
 
     public List<ColorName> readAllColors(){
         return colorRepo.findAll();
     }
 
-    public void addColorName(ColorName colorName){
-        colorRepo.save(colorName);
+    public void addColorName(ColorName ColorName){
+        colorRepo.save(ColorName);
     }
     public void deleteColorName(Long id){
         boolean exists = colorRepo.existsById(id);
@@ -29,10 +30,15 @@ public class ColorService {
         }
         colorRepo.deleteById(id);
     }
-    public void updateColorName(String colorName, Long id){
-        ColorName colorInstance = colorRepo.findById(id).orElseThrow(() -> new IllegalStateException("Color not found"));
-        if(colorName!=null && !colorName.isEmpty() && !Objects.equals(colorInstance.getColorName(), colorName)){
-            colorInstance.setColorName(colorName);
+
+    @Transactional
+    public void updateColorName(String ColorName, Long id){
+        ColorName ColorInstance = colorRepo.findById(id).orElseThrow(() -> new IllegalStateException("Color not found"));
+        if(ColorName!=null && !ColorName.isEmpty() && !Objects.equals(ColorInstance.getColorName(),ColorName)){
+            ColorInstance.setColorName(ColorName);
         }
     }
+
+
 }
+

@@ -1,12 +1,14 @@
 package SpringProject.Spring.Customers;
 
 import SpringProject.Spring.CottonCandy.CottonCandy;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "customer_name")
+@Table(name = "customer_names")
 public class CustomerName {
     @Id
     @SequenceGenerator(
@@ -20,15 +22,10 @@ public class CustomerName {
     )
     private Long id;
 
-    @Column(name = "customer_name", nullable = false)
     private String customerName;
 
-    @ManyToMany
-    @JoinTable(
-            name = "customer_cotton_candy",
-            joinColumns = @JoinColumn(name = "customer_id"),
-            inverseJoinColumns = @JoinColumn(name = "cotton_candy_id")
-    )
+    @ManyToMany(mappedBy = "customers")
+    @JsonIgnore
     private Set<CottonCandy> cottonCandies;
 
     public CustomerName() {}
@@ -71,7 +68,6 @@ public class CustomerName {
         return "CustomerName{" +
                 "id=" + id +
                 ", customerName='" + customerName + '\'' +
-                ", cottonCandies=" + cottonCandies +
                 '}';
     }
 }

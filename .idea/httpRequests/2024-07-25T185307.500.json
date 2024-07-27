@@ -1,0 +1,7 @@
+{
+  "timestamp": "2024-07-25T23:53:07.261+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "could not execute statement [ERROR: null value in column \"cotton_candy_id\" of relation \"color_name\" violates not-null constraint\n  Detail: Failing row contains (18, purple, null).] [insert into color_name (color_name,cotton_candy_id,id) values (?,?,?)]; SQL [insert into color_name (color_name,cotton_candy_id,id) values (?,?,?)]; constraint [cotton_candy_id\" of relation \"color_name]",
+  "path": "/api/colors"
+}

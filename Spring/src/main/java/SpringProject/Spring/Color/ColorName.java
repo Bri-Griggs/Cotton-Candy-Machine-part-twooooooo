@@ -1,10 +1,9 @@
 package SpringProject.Spring.Color;
 
-
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "color_names")
 public class ColorName {
     @Id
     @SequenceGenerator(
@@ -16,19 +15,15 @@ public class ColorName {
             strategy = GenerationType.SEQUENCE,
             generator = "color_sequence"
     )
-    Long id;
+    private Long id;
+    private String colorName;
 
-    @ManyToOne
-    @JoinColumn(
-            name = "cottonCandy_id",
-            nullable = false
-    )
-    String colorName;
+    public ColorName() {}
 
-    public ColorName(){}
     public ColorName(String colorName) {
         this.colorName = colorName;
     }
+
     public ColorName(Long id, String colorName) {
         this.id = id;
         this.colorName = colorName;
